@@ -1,5 +1,4 @@
-# Text_Sentiment_Classification
-Using pretrained model which is in RNN structure to predict the affected state of a given tweet
+# Twitter_Sentiment_Classification
 
 ## Introduction
 Online shopping platforms, social media platforms, and other internet applications or interactions have become part of people's daily lives. Consequently, customer reviews and community comments are readily available all over the internet, reflecting consumers' emotions and satisfaction with products or services.
