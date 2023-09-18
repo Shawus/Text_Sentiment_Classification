@@ -3,7 +3,6 @@ Using pretrained model which is in RNN structure to predict the affected state o
 
 <p align="center">
     <a href="https://circleci.com/gh/huggingface/transformers">
-        <img alt="Build" src="https://img.shields.io/circleci/build/github/huggingface/transformers/main">
     </a>
     <a href="https://github.com/huggingface/transformers/blob/main/LICENSE">
         <img alt="GitHub" src="https://img.shields.io/github/license/huggingface/transformers.svg?color=blue">
