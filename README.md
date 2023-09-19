@@ -9,5 +9,8 @@ This is precisely the angle from which this project approaches the issue. Method
 
 ## Table of contents
 * [Model to use](#model-to-use)
-* [Technologies](#technologies)
-* [Setup](#setup)
+* [Prepare the Dataset](#Prepare-the-Dataset)
+* [Fine-Tuning](#Fine_Tuning)
+* [Result](#Result)
+
+## Model to Use
