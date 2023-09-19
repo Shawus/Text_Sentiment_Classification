@@ -8,9 +8,9 @@ From a business perspective, mining insights from the vast volume of user commen
 This is precisely the angle from which this project approaches the issue. Methodologically, we aim to build a deep learning architecture based on `BERT`（Bidirectional Encoder Representations from Transformers）. This model can automatically conduct sentiment analysis on user comments, categorizing them as positive, neutral, or negative.
 
 ## Table of contents
-* [Model to use](#model-to-use)
-* [Prepare the Dataset](#Prepare-the-Dataset)
-* [Fine-Tuning](#Fine_Tuning)
-* [Result](#Result)
+* [Model Selection and Building](#model-selection-and-building)
+* [Data Collection and Preparation](#Data-Collection-and-Preparation)
+* [Model Training](#Model-Training)
+* [Results Presentation](#Results-presentation)
 
 ## Model to Use
