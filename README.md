@@ -13,4 +13,5 @@ This is precisely the angle from which this project approaches the issue. Method
 * [Model Training](#Model-Training)
 * [Results Presentation](#Results-presentation)
 
-## Model to Use
+## Model Selection and Building
+
