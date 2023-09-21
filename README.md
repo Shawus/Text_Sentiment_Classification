@@ -19,7 +19,7 @@ We consider to use BERT based models to handle this project.
 As the Transformer architecture presented by the paper [Attention is all you need](#Attention-is-all-you-need). You can comprehense BERT is the Encoder of Transformer.
 Regarding the pre-trainig process of BERT, there are two techniques worth to mention, Masked Language Modeling (Masked LM) and Next Sentence Prediction (NSP).
 
-### - Masked Language Modeling（Masked LM）  
+**- Masked Language Modeling（Masked LM）**  
 BERT was trained by masking 15% of the tokens with the goal to guess them.  
 For example, if there's a sentence:  
 That's `[mask]` she `[mask]`.  
