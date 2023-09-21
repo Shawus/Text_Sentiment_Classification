@@ -36,7 +36,7 @@ Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Dwight, you ignorant `[mas
 Label = False  
 
 In more detail, actually we only extract the vector represent `[CLS]` token to do the prediction, like the picture below.
-<img width="ˇ300" alt="截圖 2023-09-21 下午4 56 51" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">  
+<img width="ˇ552" alt="截圖 2023-09-21 下午4 56 51" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">  
 
 
 
