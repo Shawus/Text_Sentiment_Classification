@@ -17,7 +17,7 @@ This is precisely the angle from which this project approaches the issue. Method
 We consider to use BERT based models to handle this project.
 ### BERT
 As the Transformer architecture presented by the paper [Attention is all you need](#Attention-is-all-you-need). You can comprehense BERT is the Encoder of Transformer.
-Regarding the pre-trainig process of BERT, there are two techniques worth to mention, Masked Language Modeling (Masked LM) and Next Sentence Prediction (NSP).
+Regarding the pre-training process of BERT, there are two techniques worth to mention, Masked Language Modeling (Masked LM) and Next Sentence Prediction (NSP).
 
 - **Masked Language Modeling（Masked LM）**  
 BERT was trained by masking 15% of the tokens with the goal to guess them.  
@@ -26,7 +26,20 @@ That's `[mask]` she `[mask]`.
 BERT model need to be trained to predict the mask tokens which is:  
 That's `[mask]` she `[mask]`. -> That's what she said.  
 
-- **Next Sentence Prediction（NSP）**  
+- **Next Sentence Prediction（NSP）**
+Given a pair of two sentences, the pre-training process is to help BERT to judge whether or not the second follows the first, which you can realize as a binary classification task.  
+For example:  
+Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Haha, that's ridiculous! `[SEP]`  
+Label = True（Means the second sentence indeed following the previous one）  
+
+Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Dwight, you ignorant `[mask]`! `[SEP]`  
+Label = False  
+
+In more detail, actually we only extract the vector represent `[CLS]` token to do the prediction, like the picture below.
+<img width="552" alt="截圖 2023-09-21 下午4 56 51" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">  
+
+
+
 
 
 
