@@ -35,8 +35,10 @@ Label = True（Means the second sentence indeed following the previous one）
 Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Dwight, you ignorant `[mask]`! `[SEP]`  
 Label = False  
 
-In more detail, actually we only extract the vector represent `[CLS]` token to do the prediction, like the picture below.
-<img width = "450" align = "center" alt = "截圖 2023-09-21 下午4 56 51" src = "https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">  
+In more detail, actually we only extract the vector represent `[CLS]` token to do the prediction, like the picture below.  
+<p align="center">
+  <img width="450" alt="截圖 2023-09-21 下午4 56 51" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">
+</p>
 
 
 
