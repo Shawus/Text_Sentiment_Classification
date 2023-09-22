@@ -1,4 +1,4 @@
-# Twitter_Sentiment_Classification
+ㄇ# Twitter_Sentiment_Classification
 
 ## Introduction
 Online shopping platforms, social media platforms, and other internet applications or interactions have become part of people's daily lives. Consequently, customer reviews and community comments are readily available all over the internet, reflecting consumers' emotions and satisfaction with products or services.
@@ -38,7 +38,13 @@ Label = False
 In more detail, actually we only extract the vector represent `[CLS]` token to do the prediction, like the picture below.  
 <p align="center">
   <img width="450" alt="截圖 2023-09-21 下午4 56 51" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/bf9b672d-3de3-46b1-a769-d7608098faf1">
-</p>
+</p>  
+
+After repeated fine-tuning processes, it was observed that utilizing the Roberta model led to a slight improvement in prediction performance.  
+
+### BERT vs RoBERTa  
+
+
 
 
 
