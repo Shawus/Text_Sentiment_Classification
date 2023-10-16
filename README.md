@@ -46,14 +46,20 @@ After repeated fine-tuning processes, it was observed that utilizing the Roberta
 Regarding the dataset used to train the model, RoBERTa was trained on a dataset of 160GB of text, which is more than 10 times larger than the dataset used to train BERT.  
 Besides trained on bigger dataset, there are few changes in order to improve the results on BERT architecture.  
 
-- **Removing the Next Sentence Prediction (NSP) objective**
+- **Removing the Next Sentence Prediction (NSP) objective**  
 The NSP method had been explained above, and the authors experimented with removing/adding of NSP loss to different versions and concluded that removing the NSP loss matches or slightly improves downstream task performance.  
 
 - **Dynamically changing the masking pattern**  
 In BERT architecture, the masking is performed once during data preprocessing, resulting in a single static mask. Instead, data used to train RoBERTa is duplicated and masked 10 times, each time with a different mask strategy over 40 epochs, thus having 4 epochs with the same mask.
 
 ## Data Collection and Preparation  
+We extracted the csv file of dataset which is mounted at Google Drive, and make each dataset（train / test / validation） to "DataLoader" type in result.  
+The sentence output after using tokenizer function can refer to the picture below.  
+<p align="center">
+  <img width="450" alt="截圖 2023-10-16 下午5 26 27" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/842e423f-cf0c-4b08-80bf-c99a11d8ae95">
+</p>  
 
+The row number of dataset are demonstrate in the picture below.  
 
 
 
