@@ -59,7 +59,24 @@ The sentence output after using tokenizer function can refer to the picture belo
   <img width="450" alt="截圖 2023-10-16 下午5 26 27" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/842e423f-cf0c-4b08-80bf-c99a11d8ae95">
 </p>  
 
-The row number of dataset are demonstrate in the picture below.  
+The training set, validation set, and test set consist of 10,246, 2,489, and 1,256 data rows, respectively.  
+
+## Model Training  
+Some of the function and hyperparameter settings are shown in the picture below.  
+<p align="center">
+  <img width="450" alt="截圖 2023-10-16 下午5 40 06" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/96d942a3-34cb-4dbf-89fa-b57318605035">
+</p>  
+
+## Results Presentation  
+After trained in 10 epochs with learning rate decay in steps, the performance of the model are shown below.  
+
+<p align="center">
+  <img width="450" alt="截圖 2023-10-16 下午5 36 30" src="https://github.com/Shawus/Text_Sentiment_Classification/assets/104006335/754ae986-e736-4b97-bb73-e3f422544579">
+</p>  
+
+During the process of experiment BERT and RoBERTa architecture, we discover that the finetuned RoBERTa model can classify slightly better than BERT model.  
+
+
 
 
 
