@@ -14,7 +14,8 @@ This is precisely the angle from which this project approaches the issue. Method
 * [Results Presentation](#Results-presentation)
 
 ## Model Selection and Building
-We consider to use BERT based models to handle this project.
+We consider to use BERT based models to handle this project.  
+
 ### BERT
 As the Transformer architecture presented by the paper [Attention is all you need](#Attention-is-all-you-need). You can comprehense BERT is the Encoder of Transformer.
 Regarding the pre-training process of BERT, there are two techniques worth to mention, Masked Language Modeling (Masked LM) and Next Sentence Prediction (NSP).
@@ -31,7 +32,6 @@ Given a pair of two sentences, the pre-training process is to help BERT to judge
 For example:  
 Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Haha, that's ridiculous! `[SEP]`  
 Label = True（Means the second sentence indeed following the previous one）  
-
 Input = `[CLS]` That's `[mask]` she `[mask]`. `[SEP]` Dwight, you ignorant `[mask]`! `[SEP]`  
 Label = False  
 
@@ -43,6 +43,19 @@ In more detail, actually we only extract the vector represent `[CLS]` token to d
 After repeated fine-tuning processes, it was observed that utilizing the Roberta model led to a slight improvement in prediction performance.  
 
 ### BERT vs RoBERTa  
+Regarding the dataset used to train the model, RoBERTa was trained on a dataset of 160GB of text, which is more than 10 times larger than the dataset used to train BERT.  
+Besides trained on bigger dataset, there are few changes in order to improve the results on BERT architecture.  
+
+- **Removing the Next Sentence Prediction (NSP) objective**
+The NSP method had been explained above, and the authors experimented with removing/adding of NSP loss to different versions and concluded that removing the NSP loss matches or slightly improves downstream task performance.  
+
+- **Dynamically changing the masking pattern**  
+In BERT architecture, the masking is performed once during data preprocessing, resulting in a single static mask. Instead, data used to train RoBERTa is duplicated and masked 10 times, each time with a different mask strategy over 40 epochs, thus having 4 epochs with the same mask.
+
+## Data Collection and Preparation  
+
+
+
 
 
 
